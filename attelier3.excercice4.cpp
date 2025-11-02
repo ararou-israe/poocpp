@@ -96,4 +96,9 @@ int main(){
     cout << "\nNombre final de comptes : " << Compte::getnbr_comptes() << endl;
 
     return 0;
+
 }
+//copie superficielle l utilisation de constructeur par defaut on copie dans la meme case memoire par contre copie profonde on utilise un constructeur de copie on veut copier aussi les adresses dans une autre casse memoire
+//on a utiliser un variable static car on veut compter le nombre total des comptes crees
+// quand il contient pas beaucoup d instructions
+//on utilise un construteur a cause de risque de fuite memoire
