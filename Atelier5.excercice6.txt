@@ -1,0 +1,23 @@
+
+#include <iostream>
+using namespace std;
+
+template <class T>
+class point {
+    T x, y; // coordonnées
+public:
+    point(T abs, T ord) { x = abs; y = ord; }
+    void affiche();
+};
+
+template <class T>
+void point<T>::affiche() {
+    cout << "Coordonnees : " << x << " " << y << "\n";
+}
+
+int main() {
+    point<char> p(60, 65);
+    p.affiche();//valeur ascii de 60 et de 65(x valeur ascii de 60 et y=valeur ascii y)
+    //pour afficher 60 et 65 if fait le presicer dans l affichage int(x) et int(y)
+    return 0;
+}
